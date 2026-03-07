@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboFlow Robotics | Educação do Futuro</title>
+    <meta name="description" content="Metodologia completa de robótica educacional com Google Blockly para sua escola.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-main">
+
+    <!-- Navbar -->
+    <nav id="navbar-main" class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation"
+        aria-label="Navegação Principal">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home" aria-label="RoboFlow Home">
+                <i class="bi bi-robot me-2 fs-3 text-cyan" aria-hidden="true"></i>
+                <span class="fw-bold tracking-tight">ROBO<span class="text-cyan">FLOW</span></span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#sobre">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#metodologia">Metodologia</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#blockly">Blockly</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#downloads">Downloads</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a class="btn btn-primary-gradient shadow-sm"
+                            href="#contato">Fale Conosco</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section overflow-hidden">
+        <div class="float-blob" style="top: -10%; left: -10%; background: var(--accent-cyan);"></div>
+        <div class="float-blob" style="bottom: -10%; right: -10%; background: var(--accent-blue);"></div>
+
+        <div class="container hero-content text-center text-lg-start">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <span class="badge badge-premium rounded-pill mb-4 px-3 py-2">Educação para Fund I e II</span>
+                    <h1 class="display-3 mb-4">Transforme o Futuro com a Nossa <span
+                            class="text-cyan">Metodologia</span></h1>
+                    <p class="hero-subtitle mb-5">Uma experiência completa de robótica para Fundamental I e II. Do
+                        hardware à lógica visual com
+                        nossa plataforma personalizada baseada em Google Blockly.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#contato" class="btn btn-primary-gradient shadow-lg">Começar Agora</a>
+                        <a href="#metodologia" class="btn btn-outline-glass">Ver Metodologia</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="position-relative">
+                        <div class="platform-mockup shadow-2xl float-animation">
+                            <img src="hero-premium.png" alt="RoboFlow Dashboard" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite Marquee -->
+    <div class="marquee-container" aria-hidden="true">
+        <div class="marquee-content">
+            <div class="marquee-item"><i class="bi bi-star-fill"></i> Qualidade Premium</div>
+            <div class="marquee-item"><i class="bi bi-cpu"></i> Tecnologia Nacional</div>
+            <div class="marquee-item"><i class="bi bi-mortarboard"></i> Metodologia Completa</div>
+            <div class="marquee-item"><i class="bi bi-shield-check"></i> Suporte Pedagógico</div>
+            <div class="marquee-item"><i class="bi bi-rocket-takeoff"></i> Inovação Constante</div>
+            <!-- Duplicated for seamless loop -->
+            <div class="marquee-item"><i class="bi bi-star-fill"></i> Qualidade Premium</div>
+            <div class="marquee-item"><i class="bi bi-cpu"></i> Tecnologia Nacional</div>
+            <div class="marquee-item"><i class="bi bi-mortarboard"></i> Metodologia Completa</div>
+            <div class="marquee-item"><i class="bi bi-shield-check"></i> Suporte Pedagógico</div>
+            <div class="marquee-item"><i class="bi bi-rocket-takeoff"></i> Inovação Constante</div>
+        </div>
+    </div>
+
+    <!-- Sobre Nós SECTION -->
+    <section id="sobre" class="py-5 position-relative">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <span class="badge badge-premium rounded-pill mb-3">Nossa História</span>
+                <h2 class="display-5 fw-bold text-white mb-3">Quem somos?</h2>
+                <p class="text-muted max-w-700 mx-auto fs-5">Fundada por três sócios especialistas em tecnologia e
+                    educação, a RoboFlow nasceu com o propósito de redefinir o aprendizado de robótica nas escolas.</p>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-md-4">
+                    <div class="glass-card h-100">
+                        <div class="icon-gradient" aria-hidden="true">
+                            <i class="bi bi-people-fill"></i>
+                        </div>
+                        <h3 class="h4 text-white mb-3">União de Expertise</h3>
+                        <p class="text-muted mb-0">Três mentes complementares focadas em criar um sistema educacional
+                            que realmente engaja e prepara os alunos desde os primeiros anos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card h-100">
+                        <div class="icon-gradient" aria-hidden="true">
+                            <i class="bi bi-lightbulb"></i>
+                        </div>
+                        <h3 class="h4 text-white mb-3">Soluções Ativas</h3>
+                        <p class="text-muted mb-0">Desenvolvemos ferramentas pedagógicas que permitem um aprendizado
+                            prático, unindo hardware e software de forma intuitiva.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card h-100">
+                        <div class="icon-gradient" aria-hidden="true">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h3 class="h4 text-white mb-3">Qualidade de Elite</h3>
+                        <p class="text-muted mb-0">Cada etapa da nossa metodologia é testada em sala de aula para
+                            garantir o máximo aproveitamento pedagógico no Fund I e II.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por que Robótica? Section -->
+    <section id="por-que-robotica" class="py-5 bg-dark-900">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <span class="badge badge-premium rounded-pill mb-3">O Futuro é Agora</span>
+                    <h2 class="display-5 fw-bold text-white mb-4">Por que Robótica no Fundamental I e II?</h2>
+                    <p class="text-muted fs-5 mb-5">Mais do que montar robôs, preparamos mentes para os desafios de um
+                        mundo digital e automatizado.</p>
+
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="why-robotics-icon"><i class="bi bi-brain"></i></div>
+                            <h4 class="h5 text-white">Raciocínio Lógico</h4>
+                            <p class="text-muted small">Alunos aprendem a resolver problemas complexos através da
+                                decomposição e lógica de programação.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-robotics-icon"><i class="bi bi-people"></i></div>
+                            <h4 class="h5 text-white">Trabalho em Equipe</h4>
+                            <p class="text-muted small">Projetos em grupo que estimulam a colaboração, comunicação e
+                                liderança ativa.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-robotics-icon"><i class="bi bi-briefcase"></i></div>
+                            <h4 class="h5 text-white">Futuro Profissional</h4>
+                            <p class="text-muted small">Contato precoce com STEM que abre portas para as carreiras mais
+                                promissoras do mercado.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-robotics-icon"><i class="bi bi-lightbulb"></i></div>
+                            <h4 class="h5 text-white">Criatividade</h4>
+                            <p class="text-muted small">Transformação de ideias abstratas em protótipos reais e
+                                funcionais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="glass-card p-2 text-center">
+                        <img src="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?q=80&w=2070&auto=format&fit=crop"
+                            alt="Crianças com robótica" class="img-fluid rounded-3 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodologia Section -->
+    <section id="metodologia" class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <div class="glass-card p-2 rounded-4 overflow-hidden shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop"
+                                alt="Metodologia" class="img-fluid rounded-3">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <span class="badge badge-premium rounded-pill mb-3">O Diferencial</span>
+                    <h2 class="display-6 fw-bold text-white mb-4">A Metodologia que Transforma Escolas</h2>
+                    <p class="text-muted mb-5 fs-5">Não entregamos apenas equipamentos. Entregamos um ecossistema
+                        completo de inovação para Fundamental I e II.</p>
+                    <ul class="list-unstyled methodology-list">
+                        <li class="d-flex align-items-center mb-3" role="listitem"><i
+                                class="bi bi-check-lg text-cyan me-3 fs-4" aria-hidden="true"></i> Currículo estruturado
+                            do 1º ao 9º ano</li>
+                        <li class="d-flex align-items-center mb-3" role="listitem"><i
+                                class="bi bi-check-lg text-cyan me-3 fs-4" aria-hidden="true"></i> Formação premium para
+                            o corpo docente</li>
+                        <li class="d-flex align-items-center mb-3" role="listitem"><i
+                                class="bi bi-check-lg text-cyan me-3 fs-4" aria-hidden="true"></i> Plataforma de
+                            software exclusiva e nacional</li>
+                        <li class="d-flex align-items-center mb-3" role="listitem"><i
+                                class="bi bi-check-lg text-cyan me-3 fs-4" aria-hidden="true"></i> Suporte técnico
+                            especializado</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosso Time / Sócios Section -->
+    <section id="time" class="py-5 bg-dark">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <span class="badge badge-premium rounded-pill mb-3">Mentes por trás do Fluxo</span>
+                <h2 class="display-5 fw-bold text-white mb-3">Conheça nossos Fundadores</h2>
+                <p class="text-muted max-w-700 mx-auto fs-5">Três especialistas unidos pelo propósito de transformar a
+                    educação através da tecnologia.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card founder-card text-center h-100">
+                        <div class="founder-img-wrapper mx-auto" style="width: 200px; height: 200px;">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
+                                alt="Sócio 1" class="img-fluid">
+                        </div>
+                        <h3 class="h4 text-white mb-2">Fundador 1</h3>
+                        <p class="text-cyan small mb-3">Especialista em Robótica</p>
+                        <p class="text-muted small">Apaixonado por engenharia e automação, lidera o desenvolvimento de
+                            hardware da RoboFlow.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card founder-card text-center h-100">
+                        <div class="founder-img-wrapper mx-auto" style="width: 200px; height: 200px;">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop"
+                                alt="Sócio 2" class="img-fluid">
+                        </div>
+                        <h3 class="h4 text-white mb-2">Fundadora 2</h3>
+                        <p class="text-cyan small mb-3">Especialista Pedagógica</p>
+                        <p class="text-muted small">Doutora em educação, garante que nossa metodologia seja eficaz e
+                            engajadora para os alunos.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card founder-card text-center h-100">
+                        <div class="founder-img-wrapper mx-auto" style="width: 200px; height: 200px;">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop"
+                                alt="Sócio 3" class="img-fluid">
+                        </div>
+                        <h3 class="h4 text-white mb-2">Fundador 3</h3>
+                        <p class="text-cyan small mb-3">Especialista em Software</p>
+                        <p class="text-muted small">Desenvolvedor Full Stack, responsável por nossa plataforma Blockly e
+                            integração digital.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blockly Section -->
+    <section id="blockly" class="py-5 section-blockly position-relative">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <span class="badge badge-premium rounded-pill mb-3">Nossa Tecnologia</span>
+                    <h2 class="display-5 fw-bold mb-4">Nosso Google Blockly Personalizado</h2>
+                    <p class="text-muted mb-5 fs-5">Programação visual simples e intuitiva para crianças e adolescentes.
+                        Arraste e solte blocos para dar vida às suas criações, com tradução para código.</p>
+                    <button class="btn btn-primary-gradient px-5 shadow-lg">Conheça a Plataforma</button>
+                </div>
+                <!-- Advanced Blockly Mockup -->
+                <div class="col-lg-12 mt-5">
+                    <div class="platform-mockup advanced">
+                        <div class="platform-header light">
+                            <div class="d-flex gap-2">
+                                <div class="dot red"></div>
+                                <div class="dot yellow"></div>
+                                <div class="dot green"></div>
+                            </div>
+                            <div class="d-flex gap-3 align-items-center">
+                                <span class="badge badge-premium rounded-pill py-1 px-3"
+                                    style="font-size: 10px;">RoboFlow IDE v1.0</span>
+                            </div>
+                        </div>
+                        <div class="platform-body">
+                            <!-- Sidebar -->
+                            <div class="blockly-sidebar">
+                                <div class="category-item">
+                                    <div class="cat-color" style="background: #A55BBA;"></div><span>Logic</span>
+                                </div>
+                                <div class="category-item">
+                                    <div class="cat-color" style="background: #5BA55B;"></div><span>Loops</span>
+                                </div>
+                                <div class="category-item">
+                                    <div class="cat-color" style="background: #5B67A5;"></div><span>Math</span>
+                                </div>
+                                <div class="category-item">
+                                    <div class="cat-color" style="background: #A5A55B;"></div><span>Text</span>
+                                </div>
+                                <div class="category-item">
+                                    <div class="cat-color" style="background: #5BA58C;"></div><span>Lists</span>
+                                </div>
+                                <hr class="w-75 mx-auto my-2 opacity-10">
+                                <div class="category-item">
+                                    <div class="cat-color" style="background: #A55B5B;"></div><span>Variables</span>
+                                </div>
+                                <div class="category-item">
+                                    <div class="cat-color" style="background: #999999;"></div><span>Functions</span>
+                                </div>
+                            </div>
+                            <!-- Workspace -->
+                            <div class="blockly-workspace">
+                                <!-- Block 1: Set Count to 1 -->
+                                <div class="block-logic" style="top: 20px; left: 20px;">
+                                    <div class="b-shape" style="background: #A55B5B;">
+                                        set <span class="badge bg-white text-dark px-2 py-1 mx-1"
+                                            style="font-size: 10px;">Count <i
+                                                class="bi bi-caret-down-fill ms-1"></i></span> to
+                                        <div class="b-input ms-2" style="background: #5B67A5; color: white;">1</div>
+                                    </div>
+                                </div>
+                                <!-- Block 2: Repeat While -->
+                                <div class="block-logic" style="top: 80px; left: 20px;">
+                                    <div class="b-shape"
+                                        style="background: #5BA55B; padding-bottom: 120px; width: 320px; align-items: flex-start;">
+                                        <div class="d-flex align-items-center">
+                                            repeat <span class="badge bg-white text-dark px-2 py-1 mx-1"
+                                                style="font-size: 10px;">while <i
+                                                    class="bi bi-caret-down-fill ms-1"></i></span>
+                                            <div class="ms-2 d-flex align-items-center gap-1"
+                                                style="background: #A5A5FF; padding: 4px 8px; border-radius: 4px;">
+                                                <span class="badge bg-white text-dark px-1">Count <i
+                                                        class="bi bi-caret-down-fill"></i></span>
+                                                <span class="mx-1">≤</span>
+                                                <div class="b-input" style="background: #5B67A5; color: white;">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="position-absolute" style="top: 45px; left: 30px;">
+                                        <div class="text-white small fw-bold mb-2">do</div>
+                                        <!-- Nested Block: Print -->
+                                        <div class="b-shape" style="background: #A5A55B;">
+                                            print <div class="ms-2 d-flex align-items-center"
+                                                style="background: #FFD54F; padding: 4px 8px; border-radius: 4px; color: #1E293B;">
+                                                <i class="bi bi-quote me-1"></i> Hello World! <i
+                                                    class="bi bi-quote ms-1"></i>
+                                            </div>
+                                        </div>
+                                        <!-- Nested Block: Set Count to Count + 1 -->
+                                        <div class="b-shape mt-1" style="background: #A55B5B;">
+                                            set <span class="badge bg-white text-dark px-2 py-1 mx-1"
+                                                style="font-size: 10px;">Count <i
+                                                    class="bi bi-caret-down-fill ms-1"></i></span> to
+                                            <div class="ms-2 d-flex align-items-center gap-1"
+                                                style="background: #5B67A5; padding: 4px 8px; border-radius: 4px;">
+                                                <span class="badge bg-white text-dark px-1">Count</span>
+                                                <span class="mx-1">+</span>
+                                                <div class="b-input" style="background: #FFFFFF; color: #1E293B;">1
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Vertical Scrollbar Mockup -->
+                                <div
+                                    style="position: absolute; right: 5px; top: 20%; height: 60%; width: 8px; background: #CBD5E1; border-radius: 4px; opacity: 0.5;">
+                                </div>
+                                <div
+                                    style="position: absolute; bottom: 5px; left: 20%; width: 50%; height: 8px; background: #CBD5E1; border-radius: 4px; opacity: 0.5;">
+                                </div>
+                            </div>
+                            <!-- Code View -->
+                            <div class="blockly-code-view">
+                                <div class="code-header">
+                                    <select class="code-select">
+                                        <option>JavaScript</option>
+                                    </select>
+                                    <select class="code-select">
+                                        <option>English</option>
+                                    </select>
+                                    <button class="btn btn-outline-primary btn-sm py-0" style="font-size: 10px;"><i
+                                            class="bi bi-play-circle me-1"></i> Run</button>
+                                </div>
+                                <div class="code-content">
+                                    <span class="kw">var</span> <span class="var">Count</span>;<br><br>
+                                    <span class="var">Count</span> = <span class="val">1</span>;<br>
+                                    <span class="kw">while</span> (<span class="var">Count</span> &lt;= <span
+                                        class="val">3</span>) {<br>
+                                    &nbsp;&nbsp;<span class="fn">window.alert</span>(<span class="str">'Hello
+                                        World!'</span>);<br>
+                                    &nbsp;&nbsp;<span class="var">Count</span> = <span class="var">Count</span> + <span
+                                        class="val">1</span>;<br>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-5 bg-dark">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <span class="badge badge-premium rounded-pill mb-3">Dúvidas Frequentes</span>
+                        <h2 class="display-5 fw-bold text-white mb-3">Perguntas Comuns</h2>
+                        <p class="text-muted fs-5">Esclarecemos os principais pontos para diretores, coordenadores e
+                            pais.</p>
+                    </div>
+
+                    <div class="accordion accordion-premium" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne">
+                                    Como a metodologia RoboFlow se integra à BNCC?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nossa metodologia foi mapeada para as competências gerais e específicas da BNCC,
+                                    focando especialmente em Pensamento Científico, Crítico e Criativo, e Cultura
+                                    Digital.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo">
+                                    Os professores precisam ter conhecimento prévio em robótica?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Não! Oferecemos treinamento completo e planos de aula detalhados ("step-by-step")
+                                    para que qualquer professor possa ministrar as aulas com segurança.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree">
+                                    Qual é o custo de manutenção dos kits?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nossa metodologia utiliza kits de alta durabilidade e baixo custo de reposição. Além
+                                    disso, oferecemos garantia e suporte técnico contínuo para as escolas parceiras.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour">
+                                    É possível adaptar a carga horária das aulas?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim! A RoboFlow é flexível e pode ser implementada tanto como grade curricular
+                                    obrigatória quanto como atividade extracurricular.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section id="downloads" class="py-5 bg-dark">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <span class="badge badge-premium rounded-pill mb-3">Recursos</span>
+                <h2 class="display-5 fw-bold text-white mb-3">Central de Downloads</h2>
+                <p class="text-muted max-w-700 mx-auto fs-5">Acesse nossas ferramentas exclusivas para potencializar o
+                    aprendizado em sala de aula.</p>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="glass-card download-card h-100">
+                        <i class="bi bi-pc-display text-cyan mb-4 d-block" style="font-size: 3rem;"
+                            aria-hidden="true"></i>
+                        <h3 class="h5 text-white mb-3">IDE RoboFlow Beta</h3>
+                        <p class="text-muted mb-4 small">Nossa IDE principal para tablets e desktop.</p>
+                        <a href="#" class="btn btn-outline-glass btn-sm w-100">Baixar IDE 1</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card download-card h-100">
+                        <i class="bi bi-code-slash text-cyan mb-4 d-block" style="font-size: 3rem;"
+                            aria-hidden="true"></i>
+                        <h3 class="h5 text-white mb-3">IDE RoboFlow Pro</h3>
+                        <p class="text-muted mb-4 small">Ferramenta avançada para alunos do Fund II.</p>
+                        <a href="#" class="btn btn-outline-glass btn-sm w-100">Baixar IDE 2</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glass-card download-card h-100">
+                        <i class="bi bi-box-seam text-cyan mb-4 d-block" style="font-size: 3rem;"
+                            aria-hidden="true"></i>
+                        <h3 class="h5 text-white mb-3">Software de Integração</h3>
+                        <p class="text-muted mb-4 small">Drivers e software de comunicação USB.</p>
+                        <a href="#" class="btn btn-outline-glass btn-sm w-100">Baixar Software</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="py-5">
+        <div class="container py-5">
+            <div class="glass-card newsletter-card p-5 text-center shadow-2xl">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <i class="bi bi-send-check text-cyan mb-4 d-block" style="font-size: 3rem;"></i>
+                        <h2 class="display-6 fw-bold text-white mb-3">Mantenha-se Atualizado</h2>
+                        <p class="text-muted fs-5 mb-5">Receba novidades sobre educação tecnológica, robótica e dicas
+                            pedagógicas diretamente no seu e-mail.</p>
+
+                        <form class="row g-3 justify-content-center">
+                            <div class="col-md-7">
+                                <input type="email" class="form-control form-control-premium text-center"
+                                    placeholder="Seu melhor e-mail" required>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="submit" class="btn btn-primary-gradient w-100 py-2">Inscrever-se</button>
+                            </div>
+                        </form>
+                        <p class="text-muted xsmall mt-3">Prometemos não enviar spam. Você pode cancelar a qualquer
+                            momento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center mb-5">
+                    <span class="badge badge-premium rounded-pill mb-3">Vamos Conversar?</span>
+                    <h2 class="display-5 fw-bold text-white mb-3">Inicie a Jornada</h2>
+                    <p class="text-muted fs-5">Leve a inovação RoboFlow para sua escola. Nossa equipe pedagógica está
+                        pronta para te ouvir.</p>
+                </div>
+                <div class="col-lg-8">
+                    <div class="glass-card">
+                        <form id="contactForm" aria-label="Formulário de Contato">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label for="nome" class="form-label visually-hidden">Seu Nome</label>
+                                    <input type="text" id="nome" class="form-control form-control-premium"
+                                        placeholder="Seu Nome" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label visually-hidden">Seu E-mail</label>
+                                    <input type="email" id="email" class="form-control form-control-premium"
+                                        placeholder="Seu E-mail" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="escola" class="form-label visually-hidden">Nome da Escola /
+                                        Instituição</label>
+                                    <input type="text" id="escola" class="form-control form-control-premium"
+                                        placeholder="Nome da Escola / Instituição">
+                                </div>
+                                <div class="col-12">
+                                    <label for="mensagem" class="form-label visually-hidden">Como podemos
+                                        ajudar?</label>
+                                    <textarea id="mensagem" class="form-control form-control-premium" rows="5"
+                                        placeholder="Como podemos ajudar sua instituição?"></textarea>
+                                </div>
+                                <div class="col-12 text-center mt-5">
+                                    <button type="submit"
+                                        class="btn btn-primary-gradient px-5 py-3 w-100 w-md-auto shadow-lg">Solicitar
+                                        Apresentação</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 border-top border-secondary bg-dark text-white" role="contentinfo">
+        <div class="container py-4">
+            <div class="row g-5">
+                <!-- Col 1: Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand d-flex align-items-center mb-4" href="#home">
+                        <i class="bi bi-robot me-2 fs-3 text-cyan" aria-hidden="true"></i>
+                        <span class="fw-bold text-white">ROBO<span class="text-cyan">FLOW</span></span>
+                    </a>
+                    <p class="text-muted mb-4 pe-lg-5">Redefinindo o ensino de robótica de ponta a ponta para
+                        Fundamental I e II. Tecnologia e educação em perfeita harmonia.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-icon" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading">Navegação</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#sobre" class="footer-link">Sobre Nós</a></li>
+                        <li><a href="#metodologia" class="footer-link">Metodologia</a></li>
+                        <li><a href="#blockly" class="footer-link">Plataforma</a></li>
+                        <li><a href="#downloads" class="footer-link">Downloads</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Resources -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Recursos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Central de Ajuda</a></li>
+                        <li><a href="#" class="footer-link">Documentação IDE</a></li>
+                        <li><a href="#" class="footer-link">Guia Pedagógico</a></li>
+                        <li><a href="#" class="footer-link">Blog de Inovação</a></li>
+                        <li><a href="#" class="footer-link">Privacidade</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Contato</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="bi bi-geo-alt text-cyan me-3"></i>
+                            <span>São Paulo, SP - Brasil</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="bi bi-envelope text-cyan me-3"></i>
+                            <span>contato@roboflow.edu.br</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="bi bi-whatsapp text-cyan me-3"></i>
+                            <span>(11) 99999-9999</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="pt-5 mt-5 border-top border-secondary text-center">
+                <p class="text-muted mb-0 small">&copy; 2026 RoboFlow Robotics. Todos os direitos reservados. Feito com
+                    paixão pela educação.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

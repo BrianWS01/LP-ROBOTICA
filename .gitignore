@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+*.log
+.gemini/
+brain/
+implementation_plan.md
+task.md
+walkthrough.md
+*.webp
+*.png
+!hero-premium.png
