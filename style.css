@@ -357,6 +357,21 @@ h1, h2, h3, h4, .navbar-brand {
 .card-variant-3:hover { box-shadow: 0 20px 40px rgba(0, 230, 118, 0.2), 0 10px 30px rgba(0,0,0,0.6); }
 .card-variant-3 .icon-gradient { background: rgba(0, 230, 118, 0.15); color: var(--accent-green); border-color: var(--accent-green); }
 
+.card-variant-4 { border-color: #2962FF; }
+.card-variant-4:hover { box-shadow: 0 20px 40px rgba(41, 98, 255, 0.2), 0 10px 30px rgba(0,0,0,0.6); }
+.card-variant-4 .icon-gradient { background: rgba(41, 98, 255, 0.15); color: #2962FF; border-color: #2962FF; }
+.card-variant-4 .card-charm-label { color: #2962FF; }
+
+.card-variant-5 { border-color: #F44336; }
+.card-variant-5:hover { box-shadow: 0 20px 40px rgba(244, 67, 54, 0.2), 0 10px 30px rgba(0,0,0,0.6); }
+.card-variant-5 .icon-gradient { background: rgba(244, 67, 54, 0.15); color: #F44336; border-color: #F44336; }
+.card-variant-5 .card-charm-label { color: #F44336; }
+
+.card-variant-6 { border-color: var(--accent-yellow); }
+.card-variant-6:hover { box-shadow: 0 20px 40px rgba(255, 234, 0, 0.2), 0 10px 30px rgba(0,0,0,0.6); }
+.card-variant-6 .icon-gradient { background: rgba(255, 234, 0, 0.15); color: var(--accent-yellow); border-color: var(--accent-yellow); }
+.card-variant-6 .card-charm-label { color: var(--accent-yellow); }
+
 .icon-gradient {
     width: 70px;
     height: 70px;
@@ -1561,9 +1576,30 @@ h1, h2, h3, h4, .navbar-brand {
 .path-magenta { stroke: #FF00FF; animation-duration: 5s; animation-delay: -2s; }
 
 @keyframes flowPulse {
-    0% { stroke-dashoffset: 400; opacity: 0.2; }
-    50% { opacity: 0.8; stroke-width: 2; }
-    100% { stroke-dashoffset: 0; opacity: 0.2; }
+    0% { stroke-dashoffset: 400; opacity: 0; }
+    20% { opacity: 0.8; }
+    80% { opacity: 0.8; }
+    100% { stroke-dashoffset: 0; opacity: 0; }
+}
+
+#central-processor {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: cpuFloat 6s ease-in-out infinite alternate;
+}
+
+@keyframes cpuFloat {
+    0% { transform: translate(500px, 500px) scale(1); }
+    100% { transform: translate(500px, 500px) scale(1.05); }
+}
+
+.cpu-pins line {
+    animation: pinGlow 3s ease-in-out infinite;
+}
+
+@keyframes pinGlow {
+    0%, 100% { stroke-opacity: 0.3; stroke-width: 2; }
+    50% { stroke-opacity: 1; stroke-width: 3; stroke: var(--accent-magenta); }
 }
 
 .circuit-node {
@@ -1605,61 +1641,146 @@ h1, h2, h3, h4, .navbar-brand {
 }
 
 /* Jornada do Pequeno Engenheiro */
+/* Jornada do Pequeno Engenheiro - Premium Zig-Zag Layout */
 .journey-flow {
     position: relative;
-    padding: 40px 0;
+    padding: 60px 0;
+}
+
+/* Central flowing line */
+.journey-flow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, 
+        transparent, 
+        var(--accent-cyan) 10%, 
+        var(--accent-purple) 50%, 
+        var(--accent-yellow) 90%, 
+        transparent);
+    background-size: 100% 200%;
+    animation: flowLine 8s linear infinite;
+    opacity: 0.3;
+    border-radius: 10px;
+    z-index: 0;
+}
+
+@keyframes flowLine {
+    0% { background-position: 0 0%; }
+    100% { background-position: 0 100%; }
 }
 
 .journey-step {
     position: relative;
+    width: 46%; /* Slightly less than half */
     padding: 30px;
     background: rgba(255, 255, 255, 0.03);
-    border-radius: 25px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    margin-bottom: 30px;
-    transition: all 0.3s ease;
+    border-radius: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    margin-bottom: 80px; /* More space for the diagonal flow */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 1;
+}
+
+/* Alternate positions */
+.journey-step:nth-child(odd) {
+    margin-right: auto;
+    border-right-color: var(--accent-cyan);
+}
+
+.journey-step:nth-child(even) {
+    margin-left: auto;
+    border-left-color: var(--accent-purple);
+}
+
+.journey-step:last-child {
+    margin-bottom: 0;
+    border-color: var(--accent-yellow);
 }
 
 .journey-step:hover {
+    transform: translateY(-10px) scale(1.02);
     background: rgba(255, 255, 255, 0.07);
     border-color: var(--accent-cyan);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 229, 255, 0.2);
 }
 
+.journey-step:nth-child(even):hover {
+    border-color: var(--accent-purple);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 20px rgba(213, 0, 249, 0.2);
+}
+
+/* Connection Badges */
 .journey-badge {
     position: absolute;
     top: -20px;
-    left: 30px;
     background: var(--accent-yellow);
     color: #000;
-    padding: 5px 15px;
+    padding: 6px 18px;
     border-radius: 50px;
-    font-weight: 800;
-    font-size: 0.8rem;
+    font-weight: 900;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
+    z-index: 3;
 }
 
+.journey-step:nth-child(odd) .journey-badge { left: 30px; }
+.journey-step:nth-child(even) .journey-badge { right: 30px; }
+
+/* The "Hooks" - pulling one to another */
 .journey-dot {
-    width: 20px;
-    height: 20px;
-    background: var(--accent-cyan);
+    width: 24px;
+    height: 24px;
+    background: var(--dark-bg);
+    border: 4px solid var(--accent-cyan);
     border-radius: 50%;
     position: absolute;
-    left: -40px;
     top: 50%;
     transform: translateY(-50%);
-    box-shadow: 0 0 15px var(--accent-cyan);
+    box-shadow: 0 0 20px var(--accent-cyan);
+    z-index: 4;
 }
 
-.journey-line {
-    position: absolute;
-    left: -31px;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(to bottom, var(--accent-cyan), transparent);
+.journey-step:nth-child(odd) .journey-dot {
+    right: -12px; /* Half out */
+    border-color: var(--accent-cyan);
 }
+
+.journey-step:nth-child(even) .journey-dot {
+    left: -12px; /* Half out */
+    border-color: var(--accent-purple);
+    box-shadow: 0 0 20px var(--accent-purple);
+}
+
+/* Connecting arm (Horizontal line to the center) */
+.journey-step::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 8.7%; /* Gap between card and central line */
+    height: 2px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 0;
+}
+
+.journey-step:nth-child(odd)::after {
+    right: -8.7%;
+    background: linear-gradient(to right, var(--accent-cyan), transparent);
+}
+
+.journey-step:nth-child(even)::after {
+    left: -8.7%;
+    background: linear-gradient(to left, var(--accent-purple), transparent);
+}
+
+/* Remove old journey-line as it's replaced by central flow and pseudos */
+.journey-line { display: none; }
 /* =========================================
    Mobile Responsiveness Fixes
 ========================================= */
