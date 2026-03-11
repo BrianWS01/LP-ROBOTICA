@@ -1578,24 +1578,41 @@ h1, h2, h3, h4, .navbar-brand {
     /* 5. Level Progression Levels Navbar */
     .level-nav { 
         justify-content: center !important; 
-        gap: 5px !important;
-        padding-bottom: 10px;
+        gap: 8px !important;
+        padding-bottom: 12px;
         flex-wrap: nowrap !important;
     }
     .level-nav::-webkit-scrollbar { display: none; }
-    .level-selector { 
-        flex: 0 1 auto; 
-        margin-right: 0 !important; 
-        margin-bottom: 0 !important;
-        min-width: 60px;
-        padding: 8px 10px !important;
-        font-size: 0.8rem !important;
+    
+    #maze-level-selector .btn {
+        padding: 10px !important;
+        min-width: 45px !important;
+        height: 45px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem !important;
+        border-radius: 12px !important;
+    }
+    
+    #maze-level-selector .btn span {
+        display: none; /* Hide "Nível" word on mobile */
     }
 
-    /* 6. Section Centering (New Requests) */
-    #por-que-robotica, #metodologia {
-        text-align: center;
+    /* 6. Section Centering & Overlap Fix */
+    section {
+        scroll-margin-top: 140px; /* Offset for fixed header + marquee */
     }
+    
+    .hero-section {
+        padding-top: 160px; /* Ensure content clears top bar */
+    }
+
+    #por-que-robotica, #metodologia, #blockly {
+        text-align: center;
+        padding-top: 100px; /* Buffer for the fixed top */
+    }
+    
     #por-que-robotica .why-robotics-icon {
         margin-left: auto;
         margin-right: auto;
@@ -1626,5 +1643,14 @@ h1, h2, h3, h4, .navbar-brand {
         overflow-x: hidden;
         position: relative;
         width: 100%;
+    }
+    
+    /* Fix for the Blockly Categories wrapping */
+    .blockly-sidebar-new {
+        justify-content: space-between;
+        padding: 15px 10px;
+    }
+    .blockly-cat {
+        font-size: 0.85rem;
     }
 }
