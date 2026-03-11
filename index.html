@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoboFlow Robotics | Educação do Futuro</title>
+    <title>Mini Makers Robotics | Educação do Futuro</title>
     <meta name="description" content="Metodologia completa de robótica educacional com Google Blockly para sua escola.">
 
     <!-- Bootstrap CSS -->
@@ -17,65 +17,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-main">
-
-    <!-- Navbar -->
-    <nav id="navbar-main" class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation"
-        aria-label="Navegação Principal">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#home" aria-label="RoboFlow Home">
-                <i class="bi bi-robot me-2 fs-3 text-cyan" aria-hidden="true"></i>
-                <span class="fw-bold tracking-tight">ROBO<span class="text-cyan">FLOW</span></span>
-            </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#sobre">Sobre Nós</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#metodologia">Metodologia</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#blockly">Blockly</a></li>
-                    <li class="nav-item"><a class="nav-link px-3" href="#downloads">Downloads</a></li>
-                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a class="btn btn-primary-gradient shadow-sm"
-                            href="#contato">Fale Conosco</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero-section overflow-hidden">
-        <div class="float-blob" style="top: -10%; left: -10%; background: var(--accent-cyan);"></div>
-        <div class="float-blob" style="bottom: -10%; right: -10%; background: var(--accent-blue);"></div>
-
-        <div class="container hero-content text-center text-lg-start">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <span class="badge badge-premium rounded-pill mb-4 px-3 py-2">Educação para Fund I e II</span>
-                    <h1 class="display-3 mb-4">Transforme o Futuro com a Nossa <span
-                            class="text-cyan">Metodologia</span></h1>
-                    <p class="hero-subtitle mb-5">Uma experiência completa de robótica para Fundamental I e II. Do
-                        hardware à lógica visual com
-                        nossa plataforma personalizada baseada em Google Blockly.</p>
-                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
-                        <a href="#contato" class="btn btn-primary-gradient shadow-lg">Começar Agora</a>
-                        <a href="#metodologia" class="btn btn-outline-glass">Ver Metodologia</a>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <div class="position-relative">
-                        <div class="platform-mockup shadow-2xl float-animation">
-                            <img src="hero-premium.png" alt="RoboFlow Dashboard" class="img-fluid">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Infinite Marquee -->
     <div class="marquee-container" aria-hidden="true">
@@ -94,44 +40,108 @@
         </div>
     </div>
 
+    <!-- Navbar -->
+    <nav id="navbar-main" class="navbar navbar-expand-lg navbar-dark fixed-top" role="navigation"
+        aria-label="Navegação Principal">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home" aria-label="Mini Makers Home">
+                <img src="logo.svg" alt="Mini Makers Logo" width="40" height="40" class="me-2">
+                <span class="fw-bold tracking-tight">MINI<span class="text-cyan">MAKERS</span></span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link px-3" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#sobre">Sobre Nós</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#metodologia">Metodologia</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#blockly">Blockly</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#downloads">Downloads</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a class="btn btn-hero-primary shadow-sm" style="padding: 0.6rem 1.5rem;"
+                            href="#contato">Fale Conosco</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section overflow-hidden">
+        <div class="float-blob" style="top: -10%; left: -10%; background: var(--accent-cyan);"></div>
+        <div class="float-blob" style="bottom: -10%; right: -10%; background: var(--accent-blue);"></div>
+
+        <div class="container hero-content text-center text-lg-start">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <span class="badge badge-yellow-outline rounded-pill mb-4">Educação para Fund I e II</span>
+                    <h1 class="display-3 mb-4">Transforme o Futuro com a Nossa <span
+                            class="text-cyan">Metodologia</span></h1>
+                    <p class="hero-subtitle mb-5">Uma experiência completa de robótica para Fundamental I e II. Do
+                        hardware à lógica visual com nossa plataforma personalizada baseada em Google Blockly.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#contato" class="btn btn-hero-primary"><i class="bi bi-play-fill fs-5"></i> Começar Aventura</a>
+                        <a href="#metodologia" class="btn btn-hero-secondary">Ver Mapa</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="position-relative">
+                        <!-- Playful Dynamic Frame for Premium Dashboard -->
+                        <div class="dynamic-hero-frame float-animation">
+                            <img src="hero-premium.png" alt="RoboFlow Dashboard" class="img-fluid hero-premium-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- Sobre Nós SECTION -->
-    <section id="sobre" class="py-5 position-relative">
-        <div class="container py-5">
+    <section id="sobre" class="py-5 position-relative gamified-section">
+        <!-- Floating Decoratives -->
+        <div class="floating-decor shape-1"><i class="bi bi-gear-fill"></i></div>
+        <div class="floating-decor shape-2"><i class="bi bi-stars"></i></div>
+        <div class="floating-decor shape-3"><i class="bi bi-lightbulb-fill"></i></div>
+        <div class="floating-decor shape-4"><i class="bi bi-rocket-fill"></i></div>
+
+        <div class="container py-5 position-relative z-1">
             <div class="text-center mb-5">
                 <span class="badge badge-premium rounded-pill mb-3">Nossa História</span>
                 <h2 class="display-5 fw-bold text-white mb-3">Quem somos?</h2>
                 <p class="text-muted max-w-700 mx-auto fs-5">Fundada por três sócios especialistas em tecnologia e
-                    educação, a RoboFlow nasceu com o propósito de redefinir o aprendizado de robótica nas escolas.</p>
+                    educação, a Mini Makers nasceu com o propósito de redefinir o aprendizado de robótica nas escolas.</p>
             </div>
             <div class="row g-4 mt-4">
                 <div class="col-md-4">
-                    <div class="glass-card h-100">
+                    <div class="glass-card card-variant-1 h-100">
+                        <div class="card-charm-label">Tech + Edu</div>
                         <div class="icon-gradient" aria-hidden="true">
                             <i class="bi bi-people-fill"></i>
                         </div>
                         <h3 class="h4 text-white mb-3">União de Expertise</h3>
-                        <p class="text-muted mb-0">Três mentes complementares focadas em criar um sistema educacional
-                            que realmente engaja e prepara os alunos desde os primeiros anos.</p>
+                        <p class="text-muted mb-0">Tecnologia e Educação unidas por especialistas para transformar o ensino.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="glass-card h-100">
+                    <div class="glass-card card-variant-2 h-100">
+                        <div class="card-charm-label">Mão na Massa</div>
                         <div class="icon-gradient" aria-hidden="true">
                             <i class="bi bi-lightbulb"></i>
                         </div>
                         <h3 class="h4 text-white mb-3">Soluções Ativas</h3>
-                        <p class="text-muted mb-0">Desenvolvemos ferramentas pedagógicas que permitem um aprendizado
-                            prático, unindo hardware e software de forma intuitiva.</p>
+                        <p class="text-muted mb-0">Aprendizado prático com ferramentas de hardware e software intuitivas.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="glass-card h-100">
+                    <div class="glass-card card-variant-3 h-100">
+                        <div class="card-charm-label">Excelência</div>
                         <div class="icon-gradient" aria-hidden="true">
                             <i class="bi bi-shield-check"></i>
                         </div>
                         <h3 class="h4 text-white mb-3">Qualidade de Elite</h3>
-                        <p class="text-muted mb-0">Cada etapa da nossa metodologia é testada em sala de aula para
-                            garantir o máximo aproveitamento pedagógico no Fund I e II.</p>
+                        <p class="text-muted mb-0">Metodologia testada e aprovada para o máximo aproveitamento pedagógico.</p>
                     </div>
                 </div>
             </div>
@@ -139,18 +149,21 @@
     </section>
 
     <!-- Por que Robótica? Section -->
-    <section id="por-que-robotica" class="py-5 bg-dark-900">
-        <div class="container py-5">
+    <section id="por-que-robotica" class="py-5 position-relative gamified-section overflow-hidden">
+        <!-- Section Floating Decor -->
+        <div class="floating-decor shape-1" style="top: 10%; left: 8%;"><i class="bi bi-puzzle"></i></div>
+        <div class="floating-decor shape-3" style="bottom: 15%; left: 5%; font-size: 3rem;"><i class="bi bi-controller"></i></div>
+        <div class="floating-decor shape-2" style="top: 20%; right: 5%;"><i class="bi bi-gem"></i></div>
+
+        <div class="container py-5 position-relative z-1">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-5 mb-lg-0">
-                    <span class="badge badge-premium rounded-pill mb-3">O Futuro é Agora</span>
+                    <span class="badge badge-yellow-outline rounded-pill mb-3">O Futuro é Agora</span>
                     <h2 class="display-5 fw-bold text-white mb-4">Por que Robótica no Fundamental I e II?</h2>
-                    <p class="text-muted fs-5 mb-5">Mais do que montar robôs, preparamos mentes para os desafios de um
-                        mundo digital e automatizado.</p>
 
                     <div class="row g-4">
                         <div class="col-md-6">
-                            <div class="why-robotics-icon"><i class="bi bi-brain"></i></div>
+                            <div class="why-robotics-icon"><i class="bi bi-cpu"></i></div>
                             <h4 class="h5 text-white">Raciocínio Lógico</h4>
                             <p class="text-muted small">Alunos aprendem a resolver problemas complexos através da
                                 decomposição e lógica de programação.</p>
@@ -162,8 +175,8 @@
                                 liderança ativa.</p>
                         </div>
                         <div class="col-md-6">
-                            <div class="why-robotics-icon"><i class="bi bi-briefcase"></i></div>
-                            <h4 class="h5 text-white">Futuro Profissional</h4>
+                            <div class="why-robotics-icon"><i class="bi bi-rocket-takeoff"></i></div>
+                            <h4 class="h5 text-white">Missões Futuras</h4>
                             <p class="text-muted small">Contato precoce com STEM que abre portas para as carreiras mais
                                 promissoras do mercado.</p>
                         </div>
@@ -176,9 +189,10 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="glass-card p-2 text-center">
-                        <img src="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?q=80&w=2070&auto=format&fit=crop"
-                            alt="Crianças com robótica" class="img-fluid rounded-3 shadow-lg">
+                    <!-- Dynamic Organic Frame like the Hero section -->
+                    <div class="dynamic-hero-frame float-animation">
+                        <img src="criancas_robotica_1.png"
+                            alt="Crianças aprendendo robótica juntas" class="img-fluid hero-premium-img">
                     </div>
                 </div>
             </div>
@@ -186,36 +200,50 @@
     </section>
 
     <!-- Metodologia Section -->
-    <section id="metodologia" class="py-5">
-        <div class="container py-5">
+    <section id="metodologia" class="py-5 position-relative gamified-section">
+        <!-- Decorativos Flutuantes -->
+        <div class="floating-decor shape-4" style="top: 10%; right: 15%;"><i class="bi bi-compass"></i></div>
+        <div class="floating-decor shape-1" style="bottom: 10%; left: 5%;"><i class="bi bi-flag-fill"></i></div>
+
+        <div class="container py-5 position-relative z-1">
             <div class="row align-items-center g-5">
-                <div class="col-lg-6">
+                <div class="col-lg-6 order-2 order-lg-1">
                     <div class="position-relative">
-                        <div class="glass-card p-2 rounded-4 overflow-hidden shadow-2xl">
-                            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=2020&auto=format&fit=crop"
-                                alt="Metodologia" class="img-fluid rounded-3">
+                        <!-- Moldura Orgânica unificada -->
+                        <div class="dynamic-hero-frame float-animation">
+                            <img src="criancas_robotica_2.png"
+                                alt="Criança programando robô com tablet" class="img-fluid hero-premium-img">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <span class="badge badge-premium rounded-pill mb-3">O Diferencial</span>
-                    <h2 class="display-6 fw-bold text-white mb-4">A Metodologia que Transforma Escolas</h2>
-                    <p class="text-muted mb-5 fs-5">Não entregamos apenas equipamentos. Entregamos um ecossistema
-                        completo de inovação para Fundamental I e II.</p>
-                    <ul class="list-unstyled methodology-list">
-                        <li class="d-flex align-items-center mb-3" role="listitem"><i
-                                class="bi bi-check-lg text-cyan me-3 fs-4" aria-hidden="true"></i> Currículo estruturado
-                            do 1º ao 9º ano</li>
-                        <li class="d-flex align-items-center mb-3" role="listitem"><i
-                                class="bi bi-check-lg text-cyan me-3 fs-4" aria-hidden="true"></i> Formação premium para
-                            o corpo docente</li>
-                        <li class="d-flex align-items-center mb-3" role="listitem"><i
-                                class="bi bi-check-lg text-cyan me-3 fs-4" aria-hidden="true"></i> Plataforma de
-                            software exclusiva e nacional</li>
-                        <li class="d-flex align-items-center mb-3" role="listitem"><i
-                                class="bi bi-check-lg text-cyan me-3 fs-4" aria-hidden="true"></i> Suporte técnico
-                            especializado</li>
-                    </ul>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <span class="badge badge-yellow-outline rounded-pill mb-3">O Mapa do Aprendizado</span>
+                    <h2 class="display-6 fw-bold text-white mb-4">Sua Jornada de <span class="text-cyan">Mestre</span></h2>
+                    <p class="text-muted mb-5 fs-5">Progresso inteligente através de missões que transformam curiosidade em habilidade real.</p>
+                    
+                    <div class="progression-path">
+                        <div class="progression-step">
+                            <div class="step-icon"><i class="bi bi-rocket-takeoff"></i></div>
+                            <div class="step-content">
+                                <h4 class="text-white h6 mb-1">Nível 1: Start na Lógica</h4>
+                                <p class="text-muted small mb-0">Primeiros passos guiados no universo da automação.</p>
+                            </div>
+                        </div>
+                        <div class="progression-step">
+                            <div class="step-icon"><i class="bi bi-cpu"></i></div>
+                            <div class="step-content">
+                                <h4 class="text-white h6 mb-1">Nível 2: Desafios Pro</h4>
+                                <p class="text-muted small mb-0">Resolução de problemas complexos com blocos avançados.</p>
+                            </div>
+                        </div>
+                        <div class="progression-step">
+                            <div class="step-icon"><i class="bi bi-trophy-fill"></i></div>
+                            <div class="step-content">
+                                <h4 class="text-white h6 mb-1">Master: Código Criativo</h4>
+                                <p class="text-muted small mb-0">Liberdade total para criar seus próprios inventos.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -226,45 +254,46 @@
         <div class="container py-5">
             <div class="text-center mb-5">
                 <span class="badge badge-premium rounded-pill mb-3">Mentes por trás do Fluxo</span>
-                <h2 class="display-5 fw-bold text-white mb-3">Conheça nossos Fundadores</h2>
-                <p class="text-muted max-w-700 mx-auto fs-5">Três especialistas unidos pelo propósito de transformar a
-                    educação através da tecnologia.</p>
+                <h2 class="display-5 fw-bold text-white mb-3">Conheça nossos Especialistas</h2>
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6">
-                    <div class="glass-card founder-card text-center h-100">
-                        <div class="founder-img-wrapper mx-auto" style="width: 200px; height: 200px;">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
-                                alt="Sócio 1" class="img-fluid">
+                    <div class="glass-card specialist-card text-center h-100">
+                        <div class="specialist-img-container mx-auto">
+                            <div class="dynamic-hero-frame float-animation">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop"
+                                    alt="Jonatas" class="img-fluid hero-premium-img">
+                            </div>
                         </div>
-                        <h3 class="h4 text-white mb-2">Fundador 1</h3>
-                        <p class="text-cyan small mb-3">Especialista em Robótica</p>
-                        <p class="text-muted small">Apaixonado por engenharia e automação, lidera o desenvolvimento de
-                            hardware da RoboFlow.</p>
+                        <h3 class="h4 text-white mb-2">Jonatas</h3>
+                        <p class="text-cyan fw-bold small mb-3">Engenheiro de Automação</p>
+                        <p class="text-muted small mb-0">Especialista em robótica industrial, lidera o desenvolvimento de hardware focado em durabilidade e precisão pedagógica.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="glass-card founder-card text-center h-100">
-                        <div class="founder-img-wrapper mx-auto" style="width: 200px; height: 200px;">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop"
-                                alt="Sócio 2" class="img-fluid">
+                    <div class="glass-card specialist-card text-center h-100">
+                        <div class="specialist-img-container mx-auto">
+                            <div class="dynamic-hero-frame float-animation">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop"
+                                    alt="Jessé" class="img-fluid hero-premium-img">
+                            </div>
                         </div>
-                        <h3 class="h4 text-white mb-2">Fundadora 2</h3>
-                        <p class="text-cyan small mb-3">Especialista Pedagógica</p>
-                        <p class="text-muted small">Doutora em educação, garante que nossa metodologia seja eficaz e
-                            engajadora para os alunos.</p>
+                        <h3 class="h4 text-white mb-2">Jessé</h3>
+                        <p class="text-cyan fw-bold small mb-3">Diretora Pedagógica</p>
+                        <p class="text-muted small mb-0">Doutora em educação e especialista em gamificação, garante que nossa metodologia seja a mais eficaz do mercado nacional.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <div class="glass-card founder-card text-center h-100">
-                        <div class="founder-img-wrapper mx-auto" style="width: 200px; height: 200px;">
-                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop"
-                                alt="Sócio 3" class="img-fluid">
+                    <div class="glass-card specialist-card text-center h-100">
+                        <div class="specialist-img-container mx-auto">
+                            <div class="dynamic-hero-frame float-animation">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974&auto=format&fit=crop"
+                                    alt="Brian" class="img-fluid hero-premium-img">
+                            </div>
                         </div>
-                        <h3 class="h4 text-white mb-2">Fundador 3</h3>
-                        <p class="text-cyan small mb-3">Especialista em Software</p>
-                        <p class="text-muted small">Desenvolvedor Full Stack, responsável por nossa plataforma Blockly e
-                            integração digital.</p>
+                        <h3 class="h4 text-white mb-2">Brian</h3>
+                        <p class="text-cyan fw-bold small mb-3">CTO & Lead Developer</p>
+                        <p class="text-muted small mb-0">Arquiteto de software com foco em UX, criador da nossa plataforma exclusiva baseada em Google Blockly.</p>
                     </div>
                 </div>
             </div>
@@ -273,146 +302,112 @@
 
     <!-- Blockly Section -->
     <section id="blockly" class="py-5 section-blockly position-relative">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-5 mb-5 mb-lg-0">
-                    <span class="badge badge-premium rounded-pill mb-3">Nossa Tecnologia</span>
-                    <h2 class="display-5 fw-bold mb-4">Nosso Google Blockly Personalizado</h2>
-                    <p class="text-muted mb-5 fs-5">Programação visual simples e intuitiva para crianças e adolescentes.
-                        Arraste e solte blocos para dar vida às suas criações, com tradução para código.</p>
-                    <button class="btn btn-primary-gradient px-5 shadow-lg">Conheça a Plataforma</button>
-                </div>
-                <!-- Advanced Blockly Mockup -->
-                <div class="col-lg-12 mt-5">
-                    <div class="platform-mockup advanced">
-                        <div class="platform-header light">
-                            <div class="d-flex gap-2">
-                                <div class="dot red"></div>
-                                <div class="dot yellow"></div>
-                                <div class="dot green"></div>
-                            </div>
-                            <div class="d-flex gap-3 align-items-center">
-                                <span class="badge badge-premium rounded-pill py-1 px-3"
-                                    style="font-size: 10px;">RoboFlow IDE v1.0</span>
-                            </div>
-                        </div>
-                        <div class="platform-body">
-                            <!-- Sidebar -->
-                            <div class="blockly-sidebar">
-                                <div class="category-item">
-                                    <div class="cat-color" style="background: #A55BBA;"></div><span>Logic</span>
-                                </div>
-                                <div class="category-item">
-                                    <div class="cat-color" style="background: #5BA55B;"></div><span>Loops</span>
-                                </div>
-                                <div class="category-item">
-                                    <div class="cat-color" style="background: #5B67A5;"></div><span>Math</span>
-                                </div>
-                                <div class="category-item">
-                                    <div class="cat-color" style="background: #A5A55B;"></div><span>Text</span>
-                                </div>
-                                <div class="category-item">
-                                    <div class="cat-color" style="background: #5BA58C;"></div><span>Lists</span>
-                                </div>
-                                <hr class="w-75 mx-auto my-2 opacity-10">
-                                <div class="category-item">
-                                    <div class="cat-color" style="background: #A55B5B;"></div><span>Variables</span>
-                                </div>
-                                <div class="category-item">
-                                    <div class="cat-color" style="background: #999999;"></div><span>Functions</span>
+        <div class="container py-5 text-center">
+            <!-- Centered Header -->
+            <div class="mb-5">
+                <span class="badge badge-premium rounded-pill mb-3">Nossa Tecnologia</span>
+                <h2 class="display-4 fw-bold text-white mb-3">Nosso Google Blockly Personalizado</h2>
+                <p class="text-muted max-w-800 mx-auto fs-5">
+                    Programação visual simples e intuitiva para crianças e adolescentes.
+                    Arraste e solte blocos para dar vida às suas criações, com tradução para código.
+                </p>
+            </div>
+
+            <!-- Maze Game levels selector -->
+            <div class="d-flex justify-content-center gap-2 mb-4" id="maze-level-selector">
+                <button class="btn btn-outline-glass btn-sm active" data-level="1">Nível 1</button>
+                <button class="btn btn-outline-glass btn-sm" data-level="2">Nível 2</button>
+                <button class="btn btn-outline-glass btn-sm" data-level="3">Nível 3</button>
+                <button class="btn btn-outline-glass btn-sm" data-level="4">Nível 4</button>
+                <button class="btn btn-outline-glass btn-sm" data-level="5">Nível 5</button>
+            </div>
+
+            <div class="blockly-screenshot-mockup shadow-2xl overflow-hidden text-start">
+                <div class="row g-0">
+                    <!-- Left: Categories -->
+                    <div class="col-md-2 blockly-sidebar-new">
+                        <div class="blockly-cat blockly-option" data-option="Movimento"><span class="cat-square" style="background: #A5575B;"></span> Movimento</div>
+                        <div class="blockly-cat blockly-option" data-option="Sensores"><span class="cat-square" style="background: #5BA55B;"></span> Sensores</div>
+                        <div class="blockly-cat blockly-option" data-option="Lógica"><span class="cat-square" style="background: #5B67A5;"></span> Lógica</div>
+                        <div class="blockly-cat blockly-option" data-option="Sons"><span class="cat-square" style="background: #A5A55B;"></span> Sons</div>
+                        <hr class="category-divider">
+                        <div class="blockly-cat blockly-option" data-option="Variáveis"><span class="cat-square" style="background: #A55BBA;"></span> Variáveis</div>
+                    </div>
+                    
+                    <!-- Middle: Visual Blocks (Maze Game Theme) -->
+                    <div class="col-md-6 blockly-workspace-new">
+                        <div class="puzzle-blocks-container">
+                            <!-- Maze Grid Layout -->
+                            <div class="maze-container mb-3 d-flex justify-content-center">
+                                <div class="maze-grid" id="mazeGrid">
+                                    <!-- 5x5 Grid injected via JS -->
                                 </div>
                             </div>
-                            <!-- Workspace -->
-                            <div class="blockly-workspace">
-                                <!-- Block 1: Set Count to 1 -->
-                                <div class="block-logic" style="top: 20px; left: 20px;">
-                                    <div class="b-shape" style="background: #A55B5B;">
-                                        set <span class="badge bg-white text-dark px-2 py-1 mx-1"
-                                            style="font-size: 10px;">Count <i
-                                                class="bi bi-caret-down-fill ms-1"></i></span> to
-                                        <div class="b-input ms-2" style="background: #5B67A5; color: white;">1</div>
+                            
+                            <!-- Interactive Blocks Toolbox & Workspace -->
+                            <div class="row w-100 g-2 mt-2">
+                                <div class="col-4">
+                                    <h6 class="text-muted small fw-bold mb-1"><i class="bi bi-tools"></i> Ferramentas</h6>
+                                    <div class="d-flex flex-column align-items-start pt-2 pb-2">
+                                        <button class="toolbox-block dyn-action puz-add shadow-sm" data-action="f">
+                                            mover frente
+                                        </button>
+                                        <button class="toolbox-block dyn-action puz-add shadow-sm" data-action="l">
+                                            virar esquerda ↺
+                                        </button>
+                                        <button class="toolbox-block dyn-action puz-add shadow-sm" data-action="r">
+                                            virar direita ↻
+                                        </button>
+                                        <button class="toolbox-block dyn-loop puz-add shadow-sm mt-1" data-action="loop">
+                                            repetir até <i class="bi bi-geo-alt-fill text-danger"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-outline-danger mt-3 text-start w-100" id="clear-workspace">
+                                            <i class="bi bi-trash"></i> Limpar Obras
+                                        </button>
                                     </div>
+                                    <div id="maze-message" class="mt-2 small text-center fw-bold"></div>
                                 </div>
-                                <!-- Block 2: Repeat While -->
-                                <div class="block-logic" style="top: 80px; left: 20px;">
-                                    <div class="b-shape"
-                                        style="background: #5BA55B; padding-bottom: 120px; width: 320px; align-items: flex-start;">
-                                        <div class="d-flex align-items-center">
-                                            repeat <span class="badge bg-white text-dark px-2 py-1 mx-1"
-                                                style="font-size: 10px;">while <i
-                                                    class="bi bi-caret-down-fill ms-1"></i></span>
-                                            <div class="ms-2 d-flex align-items-center gap-1"
-                                                style="background: #A5A5FF; padding: 4px 8px; border-radius: 4px;">
-                                                <span class="badge bg-white text-dark px-1">Count <i
-                                                        class="bi bi-caret-down-fill"></i></span>
-                                                <span class="mx-1">≤</span>
-                                                <div class="b-input" style="background: #5B67A5; color: white;">3</div>
-                                            </div>
+                                <div class="col-8">
+                                    <h6 class="text-muted small fw-bold mb-1"><i class="bi bi-puzzle"></i> Workspace (Seu Código)</h6>
+                                    <div id="workspace-blocks" class="p-2 border border-secondary border-opacity-25 rounded bg-light" style="min-height: 480px; overflow-y: auto; overflow-x: hidden;">
+                                        <div id="user-blocks-list" class="d-flex flex-column align-items-start">
+                                            <div class="dynamic-block dyn-event dyn-hat" style="z-index: 100;">quando iniciar</div>
                                         </div>
                                     </div>
-                                    <div class="position-absolute" style="top: 45px; left: 30px;">
-                                        <div class="text-white small fw-bold mb-2">do</div>
-                                        <!-- Nested Block: Print -->
-                                        <div class="b-shape" style="background: #A5A55B;">
-                                            print <div class="ms-2 d-flex align-items-center"
-                                                style="background: #FFD54F; padding: 4px 8px; border-radius: 4px; color: #1E293B;">
-                                                <i class="bi bi-quote me-1"></i> Hello World! <i
-                                                    class="bi bi-quote ms-1"></i>
-                                            </div>
-                                        </div>
-                                        <!-- Nested Block: Set Count to Count + 1 -->
-                                        <div class="b-shape mt-1" style="background: #A55B5B;">
-                                            set <span class="badge bg-white text-dark px-2 py-1 mx-1"
-                                                style="font-size: 10px;">Count <i
-                                                    class="bi bi-caret-down-fill ms-1"></i></span> to
-                                            <div class="ms-2 d-flex align-items-center gap-1"
-                                                style="background: #5B67A5; padding: 4px 8px; border-radius: 4px;">
-                                                <span class="badge bg-white text-dark px-1">Count</span>
-                                                <span class="mx-1">+</span>
-                                                <div class="b-input" style="background: #FFFFFF; color: #1E293B;">1
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Vertical Scrollbar Mockup -->
-                                <div
-                                    style="position: absolute; right: 5px; top: 20%; height: 60%; width: 8px; background: #CBD5E1; border-radius: 4px; opacity: 0.5;">
-                                </div>
-                                <div
-                                    style="position: absolute; bottom: 5px; left: 20%; width: 50%; height: 8px; background: #CBD5E1; border-radius: 4px; opacity: 0.5;">
-                                </div>
-                            </div>
-                            <!-- Code View -->
-                            <div class="blockly-code-view">
-                                <div class="code-header">
-                                    <select class="code-select">
-                                        <option>JavaScript</option>
-                                    </select>
-                                    <select class="code-select">
-                                        <option>English</option>
-                                    </select>
-                                    <button class="btn btn-outline-primary btn-sm py-0" style="font-size: 10px;"><i
-                                            class="bi bi-play-circle me-1"></i> Run</button>
-                                </div>
-                                <div class="code-content">
-                                    <span class="kw">var</span> <span class="var">Count</span>;<br><br>
-                                    <span class="var">Count</span> = <span class="val">1</span>;<br>
-                                    <span class="kw">while</span> (<span class="var">Count</span> &lt;= <span
-                                        class="val">3</span>) {<br>
-                                    &nbsp;&nbsp;<span class="fn">window.alert</span>(<span class="str">'Hello
-                                        World!'</span>);<br>
-                                    &nbsp;&nbsp;<span class="var">Count</span> = <span class="var">Count</span> + <span
-                                        class="val">1</span>;<br>
-                                    }
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Right: Code View -->
+                    <div class="col-md-4 blockly-code-new">
+                        <div class="code-controls d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3">
+                            <div class="d-flex gap-2">
+                                <select class="form-select form-select-sm puz-select"><option>JavaScript</option></select>
+                                <select class="form-select form-select-sm puz-select"><option>Português</option></select>
+                            </div>
+                            <button class="btn btn-outline-primary rounded-pill puz-run fw-bold px-3 py-1" id="run-maze-game" style="white-space: nowrap;">
+                                <i class="bi bi-play-circle me-1"></i> Executar Programa
+                            </button>
+                        </div>
+                        <div class="code-editor-new">
+                            <div class="cl"><span class="ckw">function</span> resolveMaze() {</div>
+                            <div id="dynamic-code-view">
+                            </div>
+                            <div class="cl">}</div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <!-- Centered Button below mockup -->
+            <div class="mt-5">
+                <button class="btn btn-primary-gradient px-5 shadow-lg py-3">Conheça a Plataforma</button>
             </div>
         </div>
     </section>
+
+
 
     <!-- FAQ Section -->
     <section id="faq" class="py-5 bg-dark">
@@ -431,7 +426,7 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne">
-                                    Como a metodologia RoboFlow se integra à BNCC?
+                                    Como a metodologia Mini Makers se integra à BNCC?
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -479,7 +474,7 @@
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    Sim! A RoboFlow é flexível e pode ser implementada tanto como grade curricular
+                                    Sim! A Mini Makers é flexível e pode ser implementada tanto como grade curricular
                                     obrigatória quanto como atividade extracurricular.
                                 </div>
                             </div>
@@ -504,7 +499,7 @@
                     <div class="glass-card download-card h-100">
                         <i class="bi bi-pc-display text-cyan mb-4 d-block" style="font-size: 3rem;"
                             aria-hidden="true"></i>
-                        <h3 class="h5 text-white mb-3">IDE RoboFlow Beta</h3>
+                        <h3 class="h5 text-white mb-3">IDE Mini Makers Beta</h3>
                         <p class="text-muted mb-4 small">Nossa IDE principal para tablets e desktop.</p>
                         <a href="#" class="btn btn-outline-glass btn-sm w-100">Baixar IDE 1</a>
                     </div>
@@ -513,7 +508,7 @@
                     <div class="glass-card download-card h-100">
                         <i class="bi bi-code-slash text-cyan mb-4 d-block" style="font-size: 3rem;"
                             aria-hidden="true"></i>
-                        <h3 class="h5 text-white mb-3">IDE RoboFlow Pro</h3>
+                        <h3 class="h5 text-white mb-3">IDE Mini Makers Pro</h3>
                         <p class="text-muted mb-4 small">Ferramenta avançada para alunos do Fund II.</p>
                         <a href="#" class="btn btn-outline-glass btn-sm w-100">Baixar IDE 2</a>
                     </div>
@@ -542,16 +537,11 @@
                         <p class="text-muted fs-5 mb-5">Receba novidades sobre educação tecnológica, robótica e dicas
                             pedagógicas diretamente no seu e-mail.</p>
 
-                        <form class="row g-3 justify-content-center">
-                            <div class="col-md-7">
-                                <input type="email" class="form-control form-control-premium text-center"
-                                    placeholder="Seu melhor e-mail" required>
-                            </div>
-                            <div class="col-md-3">
-                                <button type="submit" class="btn btn-primary-gradient w-100 py-2">Inscrever-se</button>
-                            </div>
+                        <form class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2 mt-4 mx-auto" style="max-width: 600px;">
+                            <input type="email" class="form-control form-control-premium text-center text-md-start flex-grow-1 h-100 py-3" placeholder="Seu melhor e-mail" required style="border-radius: 20px;">
+                            <button type="submit" class="btn btn-primary-gradient px-4 py-3 text-nowrap mt-2 mt-md-0 m-0" style="border-radius: 20px;">Inscrever-se</button>
                         </form>
-                        <p class="text-muted xsmall mt-3">Prometemos não enviar spam. Você pode cancelar a qualquer
+                        <p class="text-muted small mt-4">Prometemos não enviar spam. Você pode cancelar a qualquer
                             momento.</p>
                     </div>
                 </div>
@@ -566,7 +556,7 @@
                 <div class="col-lg-7 text-center mb-5">
                     <span class="badge badge-premium rounded-pill mb-3">Vamos Conversar?</span>
                     <h2 class="display-5 fw-bold text-white mb-3">Inicie a Jornada</h2>
-                    <p class="text-muted fs-5">Leve a inovação RoboFlow para sua escola. Nossa equipe pedagógica está
+                    <p class="text-muted fs-5">Leve a inovação Mini Makers para sua escola. Nossa equipe pedagógica está
                         pronta para te ouvir.</p>
                 </div>
                 <div class="col-lg-8">
@@ -608,19 +598,35 @@
         </div>
     </section>
 
+    <!-- Waves Divider -->
+    <div class="wave-container">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0, 229, 255, 0.6)" />
+                <use xlink:href="#gentle-wave" x="48" y="2" fill="rgba(255, 109, 0, 0.6)" />
+                <use xlink:href="#gentle-wave" x="48" y="4" fill="rgba(63, 81, 181, 0.6)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="var(--dark-bg)" />
+            </g>
+        </svg>
+    </div>
+
     <!-- Footer -->
-    <footer class="py-5 border-top border-secondary bg-dark text-white" role="contentinfo">
+    <footer class="py-5 text-white position-relative" style="background-color: var(--dark-bg); z-index: 10;" role="contentinfo">
         <div class="container py-4">
             <div class="row g-5">
                 <!-- Col 1: Brand -->
                 <div class="col-lg-4 col-md-6">
-                    <a class="navbar-brand d-flex align-items-center mb-4" href="#home">
-                        <i class="bi bi-robot me-2 fs-3 text-cyan" aria-hidden="true"></i>
-                        <span class="fw-bold text-white">ROBO<span class="text-cyan">FLOW</span></span>
+                    <a class="navbar-brand d-inline-block mb-4" href="#home" style="transition: transform 0.3s ease;">
+                        <img src="logo.svg" alt="Mini Makers Logo" height="80" class="logo-footer-bounce">
                     </a>
-                    <p class="text-muted mb-4 pe-lg-5">Redefinindo o ensino de robótica de ponta a ponta para
-                        Fundamental I e II. Tecnologia e educação em perfeita harmonia.</p>
-                    <div class="d-flex gap-3">
+                    <p class="text-muted pe-lg-4 lh-lg" style="font-size: 0.95rem;">
+                        Redefinindo o ensino de robótica de ponta a ponta para Fundamental I e II. Tecnologia e educação em perfeita harmonia.
+                    </p>
+                    <div class="d-flex gap-3 mt-4">
                         <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
                         <a href="#" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
                         <a href="#" class="social-icon" aria-label="Youtube"><i class="bi bi-youtube"></i></a>
@@ -662,7 +668,7 @@
                         </li>
                         <li class="mb-3 d-flex align-items-center">
                             <i class="bi bi-envelope text-cyan me-3"></i>
-                            <span>contato@roboflow.edu.br</span>
+                            <span>contato@minimakers.edu.br</span>
                         </li>
                         <li class="mb-3 d-flex align-items-center">
                             <i class="bi bi-whatsapp text-cyan me-3"></i>
@@ -673,12 +679,60 @@
             </div>
 
             <!-- Bottom Copyright -->
-            <div class="pt-5 mt-5 border-top border-secondary text-center">
-                <p class="text-muted mb-0 small">&copy; 2026 RoboFlow Robotics. Todos os direitos reservados. Feito com
+            <div class="pt-4 mt-5 border-top text-center" style="border-color: rgba(255, 255, 255, 0.05) !important;">
+                <p class="text-muted mb-0 small opacity-75">&copy; 2026 Mini Makers Robotics. Todos os direitos reservados. Feito com
                     paixão pela educação.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Premium Glassmorphic Blockly Modal -->
+    <div class="modal fade blockly-modal-glass" id="blocklyModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="blocklyModalTitle">
+                        <i class="bi bi-puzzle-fill text-primary"></i> <span>Opção Blockly</span>
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div id="blocklyModalIcon" class="blockly-modal-icon-lg">
+                        <i class="bi bi-gear-wide-connected"></i>
+                    </div>
+                    <div id="blocklyModalBody">
+                        Carregando informações do módulo...
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center border-0">
+                    <button class="btn btn-primary-gradient py-2 px-5 w-100" data-bs-dismiss="modal">COMEÇAR A USAR!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gamified Victory Modal -->
+    <div class="modal fade victory-modal-glass" id="victoryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0 justify-content-center pt-4">
+                    <h4 class="modal-title fw-bold text-white text-center w-100" id="victoryModalTitle">
+                        🎉 Nível Concluído! 🎉
+                    </h4>
+                </div>
+                <div class="modal-body text-center pb-0">
+                    <div class="victory-icon-lg mb-3">
+                        <i class="bi bi-star-fill text-warning" style="font-size: 4rem; filter: drop-shadow(0 0 15px rgba(255, 193, 7, 0.8));"></i>
+                    </div>
+                    <p class="text-white fs-5 mb-4" id="victoryMessage">Excelente trabalho! Seu algoritmo funcionou perfeitamente.</p>
+                </div>
+                <div class="modal-footer justify-content-center border-0 pb-4">
+                    <button class="btn btn-outline-light px-4 me-2" data-bs-dismiss="modal">Revisar Código</button>
+                    <button class="btn btn-success px-5 fw-bold shadow-lg" id="btn-next-mission">Próxima Missão 🚀</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
