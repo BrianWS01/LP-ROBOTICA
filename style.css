@@ -1576,12 +1576,52 @@ h1, h2, h3, h4, .navbar-brand {
     .puz-run { width: 100%; margin-top: 10px; }
 
     /* 5. Level Progression Levels Navbar */
-    .level-nav { justify-content: flex-start !important; overflow-x: auto; -webkit-overflow-scrolling: touch; flex-wrap: nowrap !important; padding-bottom: 5px; }
+    .level-nav { 
+        justify-content: flex-start !important; 
+        overflow-x: auto; 
+        -webkit-overflow-scrolling: touch; 
+        flex-wrap: nowrap !important; 
+        padding-bottom: 10px;
+        margin: 0 -15px; /* Offset container padding for full-width scroll */
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .level-nav::-webkit-scrollbar { display: none; }
     .level-selector { flex: 0 0 auto; margin-right: 10px; margin-bottom: 0 !important; }
 
-    /* 6. Footer Layout */
-    .logo-footer-bounce { height: 60px; }
-    footer .row.g-5 > div { margin-top: 2rem; }
+    /* 6. Section Centering (New Requests) */
+    #por-que-robotica, #metodologia {
+        text-align: center;
+    }
+    #por-que-robotica .why-robotics-icon {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .progression-path {
+        border-left: none;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .step-icon {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+        margin: 0 auto 15px;
+    }
+
+    /* 7. Footer Layout Centering */
+    .logo-footer-bounce { height: 60px; margin: 0 auto 1.5rem; display: block; }
+    footer .row.g-5 > div { margin-top: 2rem; text-align: center; }
+    footer .social-icon { margin: 0 5px; }
+    footer ul { padding-left: 0; }
+    footer .d-flex.align-items-center { justify-content: center; }
     .footer-heading { margin-bottom: 1rem; }
+
+    /* 8. Global Stability Fix */
+    html, body {
+        overflow-x: hidden;
+        position: relative;
+        width: 100%;
+    }
 }
