@@ -7,5 +7,9 @@ implementation_plan.md
 task.md
 walkthrough.md
 *.webp
-*.png
+# *.png
 !hero-premium.png
+!criancas_robotica_1.png
+!criancas_robotica_2.png
+!mascote.png
+!badge.png
