@@ -23,6 +23,32 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-main">
 
+    <!-- Circuit Background Layer -->
+    <div id="circuit-bg">
+        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="circuit-pattern-1" x="0" y="0" width="300" height="300" patternUnits="userSpaceOnUse">
+                    <path class="circuit-path path-cyan" d="M0 150 H100 L120 130 H180 L200 150 H300 M150 0 V100 L170 120 V180 L150 200 V300" />
+                    <circle class="circuit-node node-cyan" cx="100" cy="150" r="3" />
+                    <circle class="circuit-node node-cyan" cx="200" cy="150" r="3" />
+                </pattern>
+                <pattern id="circuit-pattern-2" x="150" y="150" width="400" height="400" patternUnits="userSpaceOnUse">
+                    <path class="circuit-path path-yellow" d="M50 0 V100 L20 130 V270 L50 300 V400 M0 200 H100 L130 170 H270 L300 200 H400" />
+                    <circle class="circuit-node node-yellow" cx="50" cy="100" r="3" />
+                    <circle class="circuit-node node-yellow" cx="50" cy="300" r="3" />
+                </pattern>
+                <pattern id="circuit-pattern-3" x="50" y="250" width="350" height="350" patternUnits="userSpaceOnUse">
+                    <path class="circuit-path path-magenta" d="M0 0 L50 50 H150 L200 100 V200 L250 250 H350" />
+                    <circle class="circuit-node node-magenta" cx="50" cy="50" r="3" />
+                    <circle class="circuit-node node-magenta" cx="250" cy="250" r="3" />
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#circuit-pattern-1)" style="opacity: 1;" />
+            <rect width="100%" height="100%" fill="url(#circuit-pattern-2)" style="opacity: 0.7;" />
+            <rect width="100%" height="100%" fill="url(#circuit-pattern-3)" style="opacity: 0.5;" />
+        </svg>
+    </div>
+
     <!-- Infinite Marquee -->
     <div class="marquee-container" aria-hidden="true">
         <div class="marquee-content">
@@ -142,6 +168,31 @@
                         </div>
                         <h3 class="h4 text-white mb-3">Qualidade de Elite</h3>
                         <p class="text-muted mb-0">Metodologia testada e aprovada para o máximo aproveitamento pedagógico.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DNA Institucional: Missão, Visão, Valores -->
+            <div class="row g-4 mt-5">
+                <div class="col-lg-4">
+                    <div class="glass-card dna-card text-center h-100">
+                        <i class="bi bi-target dna-icon"></i>
+                        <h3 class="h5 text-white mb-3">Nossa Missão</h3>
+                        <p class="text-muted small mb-0">Transformar a jornada educativa de crianças e adolescentes através da tecnologia aplicada, criando os inovadores de amanhã.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="glass-card dna-card text-center h-100">
+                        <i class="bi bi-eye dna-icon"></i>
+                        <h3 class="h5 text-white mb-3">Nossa Visão</h3>
+                        <p class="text-muted small mb-0">Ser a maior referência nacional em ecossistemas de robótica pedagógica, unindo diversão, lógica e impacto social.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="glass-card dna-card text-center h-100">
+                        <i class="bi bi-gem dna-icon"></i>
+                        <h3 class="h5 text-white mb-3">Nossos Valores</h3>
+                        <p class="text-muted small mb-0">Curiosidade infinita, criatividade prática, colaboração entre pares e uma ética digital inegociável.</p>
                     </div>
                 </div>
             </div>
@@ -403,6 +454,87 @@
             <!-- Centered Button below mockup -->
             <div class="mt-5">
                 <button class="btn btn-primary-gradient px-5 shadow-lg py-3">Conheça a Plataforma</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jornada do Pequeno Engenheiro SECTION -->
+    <section id="jornada-engenheiro" class="py-5 position-relative overflow-hidden">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <span class="badge badge-yellow-outline rounded-pill mb-3">Evolução Constante</span>
+                <h2 class="display-5 fw-bold text-white mb-3">Jornada do Pequeno Engenheiro</h2>
+                <p class="text-muted fs-5 max-w-700 mx-auto">Um caminho trilhado com criatividade, detalhes e muita diversão tecnológica.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="journey-flow ps-4 ps-md-5">
+                        <!-- Step 1 -->
+                        <div class="journey-step">
+                            <div class="journey-line"></div>
+                            <div class="journey-dot"></div>
+                            <div class="journey-badge">Fase 01</div>
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h3 class="text-white h4 mb-3">Faísca da Curiosidade</h3>
+                                    <p class="text-muted mb-0">Tudo começa com uma pergunta. O aluno entende como o mundo ao seu redor funciona através de sensores e estímulos básicos, despertando o desejo de criar.</p>
+                                </div>
+                                <div class="col-md-4 text-center mt-4 mt-md-0">
+                                    <i class="bi bi-lightning-charge-fill text-yellow display-4" style="filter: drop-shadow(0 0 10px var(--accent-yellow));"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="journey-step">
+                            <div class="journey-line"></div>
+                            <div class="journey-dot"></div>
+                            <div class="journey-badge">Fase 02</div>
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h3 class="text-white h4 mb-3">Arquitetura de Lógica</h3>
+                                    <p class="text-muted mb-0">Hora de dar ordens! Com o Google Blockly, o aluno traduz pensamentos em algoritmos, aprendendo que cada ação tem uma consequência lógica e estruturada.</p>
+                                </div>
+                                <div class="col-md-4 text-center mt-4 mt-md-0">
+                                    <i class="bi bi-diagram-3-fill text-cyan display-4" style="filter: drop-shadow(0 0 10px var(--accent-cyan));"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="journey-step">
+                            <div class="journey-line"></div>
+                            <div class="journey-dot"></div>
+                            <div class="journey-badge">Fase 03</div>
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h3 class="text-white h4 mb-3">Construção e Prototipagem</h3>
+                                    <p class="text-muted mb-0">O código ganha vida física. Usando nossos kits premium, o aluno monta estruturas, conecta motores e vê seu robô interagir com o ambiente real pela primeira vez.</p>
+                                </div>
+                                <div class="col-md-4 text-center mt-4 mt-md-0">
+                                    <i class="bi bi-tools text-white display-4" style="filter: drop-shadow(0 0 10px #fff);"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="journey-step">
+                            <div class="journey-line"></div>
+                            <div class="journey-dot"></div>
+                            <div class="journey-badge">Mestrado</div>
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <h3 class="text-white h4 mb-3">Engenheiro do Futuro</h3>
+                                    <p class="text-muted mb-0">Criatividade total. O aluno já não apenas segue manuais, mas projeta soluções para problemas reais, tornando-se um mestre da inovação e do pensamento crítico.</p>
+                                </div>
+                                <div class="col-md-4 text-center mt-4 mt-md-0">
+                                    <i class="bi bi-rocket-takeoff-fill text-cyan display-4" style="filter: drop-shadow(0 0 10px var(--accent-cyan));"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
